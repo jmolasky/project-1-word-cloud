@@ -11,19 +11,29 @@ $(function(){
     let removeStopWords = false;
     
     // cached element references
+    const $form = $('form');
+    const $input = $('input[type="text"]');
     const $main = $('main');
+
+    // event listeners
+    $form.on('submit', handleSubmit);
 
     // functions
 
-    $.ajax({
-        url: `${BASE_URL}?text=${text}&fontFamily=helvetica&padding=3&minWordLength=2&removeStopwords=true`,
-        dataType: 'html',
-        success: function(data) {  
-            cloudData = data;       
-            render();
-        }
-    });
-    
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        text = $input.val();
+        $.ajax({
+            url: `${BASE_URL}?text=${text}&fontFamily=helvetica&padding=3&minWordLength=2&removeStopwords=true`,
+            dataType: 'html',
+            success: function(data) {  
+                cloudData = data;       
+                render();
+            }
+        });
+        $input.val('');
+    }
+
     function render() {
         console.log(cloudData);
         $main.append(cloudData);
