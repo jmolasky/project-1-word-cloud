@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Word Cloud</h1>
-        <h2>Create a word cloud of most common words by inputting text and specifications!</h2>
+        <h2>Create a word cloud of most frequently used words by inputting text and specifications!</h2>
         <form>
             <label>Input your text here:
                 <input type="text" placeholder="text to input">
@@ -20,6 +20,25 @@
             <label>Or upload a text file:
                 <input type="file" accept=".txt">
             </label>
+            <label for="minWordLength">Minimum word characters:
+                <select name="minWordLength" id="minWordLength">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </label>
+            <label for="removeCommonWords">Exclude common words?:
+                <select name="removeCommonWords" id="removeCommonWords">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
             <input type="submit" value="Generate Cloud!">
         </form>
     </header>
