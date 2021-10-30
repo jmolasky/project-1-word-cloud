@@ -12,17 +12,35 @@ $(function(){
     
     // cached element references
     const $form = $('form');
+    const $formContents = $('#form-contents');
     const $txtInput = $('input[type="text"]');
     const $fileInput = $('input[type="file"]');
     const $charSelect = $('#minWordLength');
     const $removeCommonWords = $('#removeCommonWords');
     const $main = $('main');
+    const $hidebtn = $('#collapse');
+    const $showbtn = $('#show-inputs');
 
     // event listeners
     $form.on('submit', handleSubmit);
     $fileInput.on('change', handleChange);
+    $hidebtn.on('click', collapseInput);
+    $showbtn.on('click', showInput);
 
     // functions
+    function collapseInput(evt) {
+        evt.preventDefault();
+        $formContents.fadeOut();
+        $showbtn.fadeIn();
+
+    }
+
+    function showInput(evt) {
+        evt.preventDefault();
+        $showbtn.css('display', 'none');
+        $formContents.fadeIn();
+    }
+
     function handleSubmit(evt) {
         evt.preventDefault();
     
