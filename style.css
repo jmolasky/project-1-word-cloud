@@ -41,18 +41,37 @@
      cursor: pointer;
  }
 
+ #button {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
  input[type=submit] {
     width: 100%;
     margin-top: .625rem;
     padding: .5rem;
-    color: white;
-    background-color: #3083e9bf;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+ }
+
+input#gen-cloud {
+    color: white;
+    background-color: #3083e9bf;
 }
 
-input[type=submit]:hover {
+input#collapse {
+    color: grey;
+    font-size: .7rem;
+}
+
+input#collapse:hover {
+    background-color: #cacdcb;
+}
+
+
+input#gen-cloud:hover {
     background-color: #2664e9cb;
 }
 
@@ -67,15 +86,35 @@ input[type=submit]:hover {
 
  }
 
- label {
-     font-size: 1rem;
+ @media screen and (max-width: 27rem) {
+
+     #button {
+         gap: .5rem;
+     }
  }
 
  @media screen and (min-width: 50rem) {
-     input[type=submit] {
-         width: 20%;
+
+    #button {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+     input#gen-cloud {
          height: 2.25rem;
-     }
+         width: 45%;
+         justify-self: center;
+         max-width: 15rem;
+    }
+    
+     input#collapse {
+         font-size: .7rem;
+         height: 1.7rem;
+         width: 35%;
+         justify-self: end;
+         align-self: end;
+         max-width: 6rem;
+    }
 
      #selects {
          display: grid;
@@ -88,7 +127,6 @@ input[type=submit]:hover {
          outline: 1px solid grey;
          border-radius: 4px;
          text-align: center;
-
      }
 
      .select {
@@ -97,7 +135,4 @@ input[type=submit]:hover {
          max-width: 5rem;
      }
 
-     #button {
-         text-align: center;
-     }
  }
