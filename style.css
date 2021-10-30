@@ -5,13 +5,13 @@
   body {
       margin: 0;
       min-height: 100vh;
-      background-color: #535388;
+      background-image: url('https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
       background-size: cover;
   }
 
   header {
-      background-color: rgb(61, 180, 231);
       font-family: helvetica;
+      color: white;
       text-align: center;
       padding: .75rem;
   }
@@ -23,7 +23,7 @@
  form {
      text-align: left;
      font-family: helvetica;
-     background-color: #81b498;
+     background-color: #6e848592;
      padding: 1.25rem;
      border-radius: 4px;
  }
@@ -91,8 +91,18 @@ input#gen-cloud:hover {
  }
 
  #show-inputs {
-     display: none;
-     cursor: pointer;
+    display: none;
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: grey;
+    font-size: .7rem;
+ }
+
+ #show-inputs:hover {
+     background-color: #cacdcb;
  }
 
  @media screen and (max-width: 27rem) {

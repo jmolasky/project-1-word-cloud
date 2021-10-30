@@ -54,7 +54,7 @@ $(function(){
             text: inputText,
             fontFamily: "helvetica",
             fontScale: "55",
-            backgroundColor: "#535388",
+            backgroundColor: "#ffffff00",
             padding: "3",
             minWordLength: minWordLength,
             rotation: "45",
