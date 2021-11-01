@@ -50,8 +50,12 @@ $(function(){
             inputText = fileText;
         }
         minWordLength = $charSelect.val();
+        let w = window.innerWidth - 15;
+        let h = w;
         const params = {
             text: inputText,
+            width: w,
+            height: h,
             fontFamily: "helvetica",
             fontScale: "55",
             backgroundColor: "#ffffff00",
