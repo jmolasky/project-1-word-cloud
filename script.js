@@ -8,8 +8,6 @@ $(function(){
     let cloudData;
     let inputText;
     let fileText;
-    let fontFamily;
-    let padding;
     let minWordLength;
     
     // cached element references
@@ -74,7 +72,7 @@ $(function(){
             width: w,
             height: h,
             fontFamily: "helvetica",
-            fontScale: "55",
+            fontScale: "35",
             backgroundColor: "#ffffff00",
             padding: "3",
             minWordLength: minWordLength,
@@ -94,6 +92,7 @@ $(function(){
             },
             error: function(error) {
                 console.log("bad request: ", error);
+                alert("API call unsuccessful. The file you uploaded is probably too big.")
             }
         });
     }
