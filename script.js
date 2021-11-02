@@ -39,7 +39,6 @@ $(function(){
         evt.preventDefault();
         $formContents.fadeOut();
         $showbtn.fadeIn();
-
     }
 
     function showInput(evt) {
