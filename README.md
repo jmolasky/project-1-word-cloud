@@ -23,7 +23,7 @@ A simple application that allows the user create a word cloud by either typing i
 
 ## Getting Started 
 
-[Click here](#) to see the site live
+[Click here](https://pages.git.generalassemb.ly/jmolasky/project-1-word-cloud/) to see the site live
 
 ## Future Enhancements
 
