@@ -7,6 +7,8 @@
       min-height: 100vh;
       background-image: url('https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
       background-size: cover;
+      display: flex;
+      flex-direction: column;
   }
 
   header {
@@ -18,6 +20,7 @@
 
  main {
     text-align: center;
+    flex-grow: 1;
  }
 
  form {
@@ -109,6 +112,14 @@ input#gen-cloud:hover {
  #show-button-container {
      display: flex;
      justify-content: center;
+ }
+
+ footer {
+     display: flex;
+     justify-content: center;
+     color: rgb(94, 91, 91);
+     position: sticky;
+     margin-bottom: 0;
  }
 
  @media screen and (max-width: 27rem) {
