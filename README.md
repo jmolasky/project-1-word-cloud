@@ -11,19 +11,19 @@ A simple application that allows the user create a word cloud by either typing i
 
 ## Screenshots
 
-![Landing page](https://i.imgur.com/pAhlNgv.png)
+![Landing page](https://i.imgur.com/t0gSllz.png)
 
-![Input fields hidden](https://i.imgur.com/UDx2Y5V.png)
+![Input fields hidden](https://i.imgur.com/BVZa41w.png)
 
-![Uploading a text file](https://i.imgur.com/sStbOd2.png)
+![Smaller screen size](https://i.imgur.com/qUClYa2.png)
 
-![Input file too large](https://i.imgur.com/6EDpMSJ.png)
+![Uploading a text file](https://i.imgur.com/DDrxeDJ.png)
 
-![Word cloud](https://i.imgur.com/MUwSv6I.png)
+![Word cloud](https://i.imgur.com/QFfSmEe.png)
 
 ## Getting Started 
 
-[Click here](https://jmolasky.github.io/project-1-word-cloud/) to see the site live
+[Click here](https://jmolasky.github.io/project-1-word-cloud/) to see the site live!
 
 ## Future Enhancements
 
