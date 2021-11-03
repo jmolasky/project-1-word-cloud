@@ -15,12 +15,14 @@
       font-family: helvetica;
       color: white;
       text-align: center;
+      text-shadow: 1px 1px 2px #6b6a6a;
       padding: .75rem;
   }
 
  main {
     text-align: center;
     flex-grow: 1;
+    text-shadow: 1px 1px 2px #6b6a6a;
  }
 
  form {
