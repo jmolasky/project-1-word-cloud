@@ -7,6 +7,7 @@
       min-height: 100vh;
       background-image: url('https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
       background-size: cover;
+      background-position: center;
       display: flex;
       flex-direction: column;
   }
