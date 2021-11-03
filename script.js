@@ -59,7 +59,12 @@ $(function(){
             // Clears input field
             $txtInput.val('');
         } else {
-            inputText = fileText;
+            if(fileText) {
+                inputText = fileText;
+            } else {
+                alert("Please upload a file or input text.");
+                return;
+            }
         }
         minWordLength = $charSelect.val();
         // Set width and height of cloud to the width of the window minus 15px
