@@ -1,4 +1,4 @@
-# Project 1: Word Cloud
+# Word Cloud
 
 A simple application that allows the user create a word cloud by either typing into an input field or uploading a .txt file. The user can also choose whether or not to exclude commonly-used words such as "a," "an," "the" etc. and what the minimum number of characters should be for the words in the cloud.
 
